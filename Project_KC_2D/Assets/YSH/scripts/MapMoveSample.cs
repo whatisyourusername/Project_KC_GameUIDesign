@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 /*
@@ -14,6 +15,8 @@ public class MapMoveSample : MonoBehaviour
 {
     public Camera MainCam; // 메인 카메라
     public Vector3 MainCamPos; // 카메라 위치
+
+    public TMP_Text MoveUIText;
 
     public GameObject NodeMoveUI; // 이동 UI
     public GameObject PartyUI; // 파티원 UI
@@ -53,6 +56,7 @@ public class MapMoveSample : MonoBehaviour
     void Start()
     {
         MainCamPos = MainCam.transform.position; // 해당 스크립트 내 카메라 위치 = 현재 카메라 위치로 시작
+        MoveUIText.text = "어디로 갈까?";
         PartyUI.SetActive(true);
         CurrentNode = 0;
         SetOnlyOneActive(0);
@@ -70,28 +74,30 @@ public class MapMoveSample : MonoBehaviour
     {
 
         // SetOnlyOneActive,SetMultipleActive,SetAllActive에 대한 설명은 코드 최하단에 있습니다.
-        //갈림길 유형에 따라서, 활성화 되는 버튼 갯수 다름 (단, 갈림길이 있는 노드에서만 활성화됨)
+        //갈림길 유형에 따라서, 활성화 되는 버튼 갯수 다름
         //갈림길이 나오는 노드는 UI 전환버튼오로 파티원 UI와 이동 UI 전환 가능
         //갈림길이 좌우이면 Button1,3 활성화
+        //단방향 길이면 Button2 만 활성화
         //갈김길이 3개이면 모든 Button 3개 전부 활성화 (갈림길은 최대 3로만 나뉨, 4개 이상으로 나뉘는 길이 없음)
         //단, 해당 스크립트 내에서는 3방향 길을 직접 구현하지 않았지만, 구현은 충분히 가능
-        //갈림길이 없는 단방향 길이면 버튼 전부 비활성화,UI는 파티원 UI로 고정되며, 맵의 화살표 오브젝트를 터치해서만 이동할 수 있음.
-        //단방향 길에서는 UI 변경버튼 비활성화.
-        //(단, 갈림길에서도 화살표를 이용한 이동 가능)
         //해당 스크립트는 노드의 위치에 맞춰서 '카메라 이동' 만 대강 구현되었습니다. (플레이어 현재 위치 계산하는 기능은 미포함)
 
         switch (CurrentNode)
             {
                 case 0: //0: 시작 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[0].x, MapNodeVectors[0].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetOnlyOneActive(0); //시작 노드에서는 해당 노드에 활당된 화살표만 활성화하면서 시작
-                    PartyUI.SetActive(true); //단방향 길만 있는 노드에서는 파티 UI만 보입니다. 
-                    UIChangeButton.SetActive(false); // 단방향길에서는 UI 전환을 못하게, UI 전환 버튼 비활성화
-                    UIChangeButton2.SetActive(false); // 단방향길에서는 UI 전환을 못하게, UI 전환 버튼 비활성화
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(true); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
 
                 case 1: //1: 전투 사건 1 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[1].x, MapNodeVectors[1].y, MainCamPos.z); //이동한 노드 위치로 카메라 이동
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(1, 2); //해당 노드에 할당된 화살표 오브젝트 활성화 (양 방향길이라, 2개 활성화)
                      // 갈림길이 나오는 노드는 UI 전환버튼오로 파티원 UI와 이동 UI 전환 가능
                     UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
@@ -103,14 +109,16 @@ public class MapMoveSample : MonoBehaviour
 
                 case 2: // 2: 전투 사건 2 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[2].x, MapNodeVectors[2].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(3); //해당 노드에 할당된 화살표 오브젝트 활성화 (단 방향길이라, 1개 활성화)
-                    PartyUI.SetActive(true); // 이동 관련 UI를 비활성화 하지 않고, 파티원 UI가 '덮어씌워서' 이동 UI에 관한 상호작용을 방지함
-                    UIChangeButton.SetActive(false); // 단방향길에서는 UI 전환을 못하게, UI 전환 버튼 비활성화
-                    UIChangeButton2.SetActive(false); // 단방향길에서는 UI 전환을 못하게, UI 전환 버튼 비활성화
+                    NodeMoveButton1.SetActive(true); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(false); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
 
                 case 3: //  3: 중립적 사건 1 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[3].x, MapNodeVectors[3].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(4, 5); //양방향 길
                     UIChangeButton.SetActive(true);
                     UIChangeButton2.SetActive(true);
@@ -121,14 +129,18 @@ public class MapMoveSample : MonoBehaviour
 
                 case 4: //  4: 긍정적 사건 1 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[4].x, MapNodeVectors[4].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(6); //단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(false); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(true); // 오른쪽 버튼 활성화
                     break;
 
                 case 5: // 5: 부정적 사건 1 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[5].x, MapNodeVectors[5].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(7, 8); //양방향 길
                     UIChangeButton.SetActive(true);
                     UIChangeButton2.SetActive(true);
@@ -139,50 +151,68 @@ public class MapMoveSample : MonoBehaviour
 
                 case 6: // 6: 정예 전투 사건 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[6].x, MapNodeVectors[6].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(9);//단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(true);
+                    NodeMoveButton2.SetActive(false); 
+                    NodeMoveButton3.SetActive(false); 
                     break;
 
                 case 7: //  7: 전투 사건 3 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[7].x, MapNodeVectors[7].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(10); //단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(false); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(true); // 오른쪽 버튼 활성화
                     break;
 
                 case 8: //  8: 중립적 사건 2 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[8].x, MapNodeVectors[8].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(11);  //단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(true); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
 
                 case 9: // 9: 긍정적 사건 2 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[9].x, MapNodeVectors[9].y, MainCamPos.z);
+                    MoveUIText.text = "어디로 갈까?";
                     SetMultipleActive(12); //단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(true); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
 
                 case 10: //10: 보스 노드
                     MainCam.transform.position = new Vector3(MapNodeVectors[10].x, MapNodeVectors[10].y, MainCamPos.z);
-                    SetAllActive(false); //단방향 길
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    MoveUIText.text = "더 이상 갈 방향이 없네 :(";
+                    SetAllActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(false); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
 
                 default: // 버그 방지용 (switch문 범위 벗어나면, 보스 노드로 이동함, 웬만해서 실제로 작동을 하지 않을 것임.)
                     MainCam.transform.position = new Vector3(MapNodeVectors[10].x, MapNodeVectors[10].y, MainCamPos.z);
+                    MoveUIText.text = "더 이상 갈 방향이 없네 :(";    
                     SetAllActive(false);
-                    PartyUI.SetActive(true);
-                    UIChangeButton.SetActive(false);
-                    UIChangeButton2.SetActive(false);
+                    UIChangeButton.SetActive(true); // 이동 UI 내부 전환 버튼 활성화
+                    UIChangeButton2.SetActive(true); // 파티원 UI 내부 전환 버튼 활성화
+                    NodeMoveButton1.SetActive(false); //왼쪽 버튼 활성화
+                    NodeMoveButton2.SetActive(false); //가운데 버튼 비활성화
+                    NodeMoveButton3.SetActive(false); // 오른쪽 버튼 활성화
                     break;
             }
     }
@@ -205,7 +235,8 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 2:
-                Debug.Log("지금은 사용 불가능");
+                Debug.Log("전투 사건 2  -> 긍정적 사건 1번으로 이동!");
+                CurrentNode = 4;
                 break;
 
             case 3:
@@ -214,7 +245,8 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 4:
-                Debug.Log("지금은 사용 불가능");
+                Debug.Log("긍정적 사건 1 -> 전투 사건 2번으로 이동!");
+                CurrentNode = 7;
                 break;
 
             case 5:
@@ -223,7 +255,8 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 6:
-                Debug.Log("지금은 사용 불가능");
+                Debug.Log("정예 전투 사건 -> 중립적 사건 2로 이동!");
+                CurrentNode = 8;
                 break;
 
             case 7:
@@ -263,8 +296,7 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 2:
-                Debug.Log("전투 사건 1 -> 긍정적 사건 1로 이동!");
-                CurrentNode = 4;
+                Debug.Log("지금은 사용 불가능");
                 break;
 
             case 3:
@@ -272,8 +304,7 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 4:
-                Debug.Log("긍정적 사건 1 -> 전투 사건 2번으로 이동!");
-                CurrentNode = 7;
+                Debug.Log("지금은 사용 불가능");
                 break;
 
             case 5:
@@ -281,13 +312,11 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 6:
-                Debug.Log("정예 전투 사건 -> 중립적 사건 2로 이동!");
-                CurrentNode = 8;
+                Debug.Log("지금은 사용 불가능");
                 break;
 
             case 7:
-                Debug.Log("전투 사건 3 -> 긍정적 사건 2로 이동!");
-                CurrentNode = 9;
+                Debug.Log("지금은 사용 불가능");
                 break;
 
             case 8:
@@ -334,7 +363,8 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 4:
-                Debug.Log("지금은 사용 불가능");
+                Debug.Log("긍정적 사건 1 -> 전투 사건 2번으로 이동!");
+                CurrentNode = 7;
                 break;
 
             case 5:
@@ -347,7 +377,8 @@ public class MapMoveSample : MonoBehaviour
                 break;
 
             case 7:
-                Debug.Log("지금은 사용 불가능");
+                Debug.Log("전투 사건 3 -> 긍정적 사건 2로 이동!");
+                CurrentNode = 9;
                 break;
 
             case 8:
