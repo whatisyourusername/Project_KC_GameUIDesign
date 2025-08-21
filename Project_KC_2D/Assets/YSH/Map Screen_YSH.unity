@@ -2117,6 +2117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCam: {fileID: 610220040}
   MainCamPos: {x: 0, y: 0, z: 0}
+  MoveUIText: {fileID: 1118762355}
   NodeMoveUI: {fileID: 2047360433}
   PartyUI: {fileID: 1346487445}
   MapNodeLocations:
@@ -3857,7 +3858,7 @@ GameObject:
   - component: {fileID: 1118762356}
   - component: {fileID: 1118762355}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 'Route Select UI Text '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3879,8 +3880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 382}
-  m_SizeDelta: {x: 431.022, y: 50}
+  m_AnchoredPosition: {x: -0.771, y: 382}
+  m_SizeDelta: {x: 583.499, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118762355
 MonoBehaviour:
@@ -4780,7 +4781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1346487446
 RectTransform:
   m_ObjectHideFlags: 0
