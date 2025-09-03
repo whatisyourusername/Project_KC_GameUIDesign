@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12509681}
   m_Layer: 5
-  m_Name: Party Member Fortrait 3
+  m_Name: Party Member Fortrait 3_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330, y: 245}
+  m_AnchoredPosition: {x: 330, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &23928807
@@ -541,7 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 98050529}
   m_Layer: 5
-  m_Name: Team 2 Class UI
+  m_Name: Team 2 Class UI_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -556,7 +556,7 @@ RectTransform:
   m_GameObject: {fileID: 98050528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999, y: 0.99999, z: 0.99999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1365936816}
@@ -683,7 +683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160620173}
   m_Layer: 5
-  m_Name: Team 3 Class UI
+  m_Name: Team 3 Class UI_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,7 +698,7 @@ RectTransform:
   m_GameObject: {fileID: 160620172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999, y: 0.99999, z: 0.99999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090316017}
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 203216705}
   - component: {fileID: 203216704}
   m_Layer: 5
-  m_Name: Party Member 1 Frame Stroke
+  m_Name: Party Member 1 Frame Stroke_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 223704982}
   - component: {fileID: 223704981}
   m_Layer: 5
-  m_Name: Party Member 1 Frame
+  m_Name: Party Member 1 Frame_Center_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,7 +812,7 @@ RectTransform:
   m_GameObject: {fileID: 223704979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 678576050}
@@ -820,7 +820,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 250}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223704981
 MonoBehaviour:
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 261849016}
   - component: {fileID: 261849015}
   m_Layer: 5
-  m_Name: Team Fortrait 3 Frame Stroke
+  m_Name: Team Fortrait 3 Frame Stroke_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429341733}
   m_Layer: 5
-  m_Name: Party Member 1 Class UI
+  m_Name: Party Member 1 Class UI_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 440577286}
   - component: {fileID: 440577285}
   m_Layer: 5
-  m_Name: Team 2 Combat Power Text
+  m_Name: Team 3 LV Text_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1200
+  m_text: Lv.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -1250,7 +1250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495233525}
   m_Layer: 5
-  m_Name: Party Fortraits
+  m_Name: Party Fortraits_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1275,7 +1275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 265}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &544134948
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 576179277}
   - component: {fileID: 576179276}
   m_Layer: 5
-  m_Name: Team Fortrait 3 Frame
+  m_Name: Team Fortrait 3 Frame_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1472,7 +1472,7 @@ RectTransform:
   m_GameObject: {fileID: 576179274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 12509681}
@@ -1480,7 +1480,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 250}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576179276
 MonoBehaviour:
@@ -1530,7 +1530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593822077}
   m_Layer: 5
-  m_Name: Team 2 Combat Power UI
+  m_Name: Team 2 LV UI_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1545,16 +1545,15 @@ RectTransform:
   m_GameObject: {fileID: 593822076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999812, y: 0.9999812, z: 0.9999812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 652200187}
-  - {fileID: 1923019211}
   m_Father: {fileID: 975426299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -165}
+  m_AnchoredPosition: {x: 0, y: -165}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &610220038
@@ -1707,7 +1706,7 @@ GameObject:
   - component: {fileID: 623931368}
   - component: {fileID: 623931367}
   m_Layer: 5
-  m_Name: Move Button 2
+  m_Name: Move Button 2_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1730,7 +1729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 203}
+  m_AnchoredPosition: {x: 0, y: 203}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623931367
@@ -1839,7 +1838,7 @@ GameObject:
   - component: {fileID: 652200189}
   - component: {fileID: 652200188}
   m_Layer: 5
-  m_Name: Team 2 Combat Power Text
+  m_Name: Team 2 LV Text_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1884,7 +1883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1200
+  m_text: Lv.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -1971,7 +1970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 678576050}
   m_Layer: 5
-  m_Name: Party Member Fortrait 1
+  m_Name: Party Member Fortrait 1_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,7 +1996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330, y: 245}
+  m_AnchoredPosition: {x: -330, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &681266022
@@ -2273,7 +2272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 755177484}
   m_Layer: 5
-  m_Name: Party Member 1 Combat Power UI
+  m_Name: Party Member 1 LV UI__Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2292,12 +2291,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1041455920}
-  - {fileID: 1032296943}
   m_Father: {fileID: 678576050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -165}
+  m_AnchoredPosition: {x: 0, y: -165}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &825491704
@@ -2396,7 +2394,7 @@ GameObject:
   - component: {fileID: 835078694}
   - component: {fileID: 835078693}
   m_Layer: 5
-  m_Name: Team 1 Class Icon
+  m_Name: Team 1 Class Icon_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2711,7 +2709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 975426299}
   m_Layer: 5
-  m_Name: Party Member Fortrait 2
+  m_Name: Party Member Fortrait 2_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2737,7 +2735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 245}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &981742923
@@ -2836,7 +2834,7 @@ GameObject:
   - component: {fileID: 1003207739}
   - component: {fileID: 1003207738}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Party List Inner Window_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2851,7 +2849,7 @@ RectTransform:
   m_GameObject: {fileID: 1003207736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1748114287}
@@ -2859,7 +2857,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 1030, y: 530}
+  m_SizeDelta: {x: 980, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1003207738
 MonoBehaviour:
@@ -3076,7 +3074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026425822}
   m_Layer: 5
-  m_Name: Team 3 Combat Power UI
+  m_Name: Team 3 LV UI_Center_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3091,93 +3089,17 @@ RectTransform:
   m_GameObject: {fileID: 1026425821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999812, y: 0.9999812, z: 0.9999812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 440577284}
-  - {fileID: 1066557044}
   m_Father: {fileID: 12509681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: -165}
+  m_AnchoredPosition: {x: 0, y: -165}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1032296942
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032296943}
-  - component: {fileID: 1032296945}
-  - component: {fileID: 1032296944}
-  m_Layer: 5
-  m_Name: Team 1 Combat Power Icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1032296943
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032296942}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 755177484}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110.4, y: -4.1}
-  m_SizeDelta: {x: 75, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1032296944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032296942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 26dc5ec76198f20468969ad6db3ef16f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1032296945
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032296942}
-  m_CullTransparentMesh: 1
 --- !u!1 &1041455919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,7 +3112,7 @@ GameObject:
   - component: {fileID: 1041455922}
   - component: {fileID: 1041455921}
   m_Layer: 5
-  m_Name: Team 1 Combat Power Text
+  m_Name: Team 1 LV Text_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3235,7 +3157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1200
+  m_text: Lv.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -3311,81 +3233,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041455919}
-  m_CullTransparentMesh: 1
---- !u!1 &1066557043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1066557044}
-  - component: {fileID: 1066557046}
-  - component: {fileID: 1066557045}
-  m_Layer: 5
-  m_Name: Team 2 Combat Power Icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1066557044
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066557043}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1026425822}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110.4, y: -4.1}
-  m_SizeDelta: {x: 75, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1066557045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066557043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 26dc5ec76198f20468969ad6db3ef16f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1066557046
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066557043}
   m_CullTransparentMesh: 1
 --- !u!1 &1066942980
 GameObject:
@@ -3650,7 +3497,7 @@ GameObject:
   - component: {fileID: 1090316019}
   - component: {fileID: 1090316018}
   m_Layer: 5
-  m_Name: Team 3 Class Icon Frame
+  m_Name: Team 3 Class Icon Frame_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3726,7 +3573,7 @@ GameObject:
   - component: {fileID: 1105520829}
   - component: {fileID: 1105520828}
   m_Layer: 5
-  m_Name: Move Button 3
+  m_Name: Move Button 3_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3843,7 +3690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327, y: 203}
+  m_AnchoredPosition: {x: 330, y: 203}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1118762353
@@ -3858,7 +3705,7 @@ GameObject:
   - component: {fileID: 1118762356}
   - component: {fileID: 1118762355}
   m_Layer: 5
-  m_Name: 'Route Select UI Text '
+  m_Name: Route Select UI Text_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3880,7 +3727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.771, y: 382}
+  m_AnchoredPosition: {x: 0, y: 390}
   m_SizeDelta: {x: 583.499, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118762355
@@ -4485,7 +4332,7 @@ GameObject:
   - component: {fileID: 1210480366}
   - component: {fileID: 1210480365}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Route Outer Window_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4635,7 +4482,7 @@ GameObject:
   - component: {fileID: 1296251604}
   - component: {fileID: 1296251603}
   m_Layer: 5
-  m_Name: Team 2 Class Icon
+  m_Name: Team 2 Class Icon_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4776,12 +4623,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1346487446}
   m_Layer: 5
-  m_Name: Party UI
+  m_Name: Party UI_Bottom_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1346487446
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4983,7 +4830,7 @@ GameObject:
   - component: {fileID: 1365936818}
   - component: {fileID: 1365936817}
   m_Layer: 5
-  m_Name: Team 2 Class Icon Frame
+  m_Name: Team 2 Class Icon Frame_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5058,7 +4905,7 @@ GameObject:
   - component: {fileID: 1367619931}
   - component: {fileID: 1367619930}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Party List Outer Window_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5176,7 +5023,7 @@ GameObject:
   - component: {fileID: 1629644039}
   - component: {fileID: 1629644038}
   m_Layer: 5
-  m_Name: Move Button 1
+  m_Name: Move Button 1_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5199,7 +5046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309, y: 203}
+  m_AnchoredPosition: {x: -330, y: 203}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629644038
@@ -5308,7 +5155,7 @@ GameObject:
   - component: {fileID: 1635667876}
   - component: {fileID: 1635667875}
   m_Layer: 5
-  m_Name: Team 1 Class Icon Frame
+  m_Name: Team 1 Class Icon Frame_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5467,7 +5314,7 @@ GameObject:
   - component: {fileID: 1650679383}
   - component: {fileID: 1650679382}
   m_Layer: 5
-  m_Name: Team Fortrait 2 Frame Stroke
+  m_Name: Team Fortrait 2 Frame Stroke_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5709,7 +5556,7 @@ GameObject:
   - component: {fileID: 1735844820}
   - component: {fileID: 1735844819}
   m_Layer: 5
-  m_Name: Team Fortrait 2 Frame
+  m_Name: Team Fortrait 2 Frame_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5724,7 +5571,7 @@ RectTransform:
   m_GameObject: {fileID: 1735844817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 975426299}
@@ -5732,7 +5579,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 250}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735844819
 MonoBehaviour:
@@ -5806,10 +5653,10 @@ RectTransform:
   - {fileID: 436708555}
   m_Father: {fileID: 135804920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 348, y: 979.9999}
-  m_SizeDelta: {x: 300, y: 166.2}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -192, y: -190.00012}
+  m_SizeDelta: {x: 300, y: 166.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738528477
 MonoBehaviour:
@@ -5915,7 +5762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1748114287}
   m_Layer: 5
-  m_Name: Party List Window
+  m_Name: Party List Window_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5940,7 +5787,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1758255247
 GameObject:
@@ -6205,7 +6052,7 @@ GameObject:
   - component: {fileID: 1832458630}
   - component: {fileID: 1832458629}
   m_Layer: 5
-  m_Name: Team 3 Class Icon
+  m_Name: Team 3 Class Icon_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6511,81 +6358,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901502495}
   m_CullTransparentMesh: 1
---- !u!1 &1923019210
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1923019211}
-  - component: {fileID: 1923019213}
-  - component: {fileID: 1923019212}
-  m_Layer: 5
-  m_Name: Team 2 Combat Power Icon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1923019211
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923019210}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 593822077}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110.4, y: -4.1}
-  m_SizeDelta: {x: 75, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1923019212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923019210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 26dc5ec76198f20468969ad6db3ef16f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1923019213
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923019210}
-  m_CullTransparentMesh: 1
 --- !u!1 &1931505923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,7 +6537,7 @@ GameObject:
   - component: {fileID: 1933770662}
   - component: {fileID: 1933770661}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Route Inner Window_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6780,7 +6552,7 @@ RectTransform:
   m_GameObject: {fileID: 1933770659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2098599908}
@@ -6788,7 +6560,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 1030, y: 530}
+  m_SizeDelta: {x: 980, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933770661
 MonoBehaviour:
@@ -7259,7 +7031,7 @@ GameObject:
   - component: {fileID: 2038418655}
   - component: {fileID: 2038418654}
   m_Layer: 5
-  m_Name: UI Change Button (Route)
+  m_Name: UI Change Button (Route)_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7282,8 +7054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.621, y: -10}
-  m_SizeDelta: {x: 208.711, y: 72.466}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 210, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038418654
 MonoBehaviour:
@@ -7389,7 +7161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047360434}
   m_Layer: 5
-  m_Name: Route Select UI
+  m_Name: Route Select UI_Bottom_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7433,7 +7205,7 @@ GameObject:
   - component: {fileID: 2097772525}
   - component: {fileID: 2097772524}
   m_Layer: 5
-  m_Name: UI Change Button (Party)
+  m_Name: UI Change Button (Party)_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7456,7 +7228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.621, y: -10}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 208.711, y: 72.466}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097772524
@@ -7563,7 +7335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098599908}
   m_Layer: 5
-  m_Name: Route Select Window
+  m_Name: Route Select Window_Center_Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7588,7 +7360,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
