@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dc1b7002040bd9c478cb1ca22a00a23d
+guid: 18beb9148212ace479e87a7433b0ce37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BookMark_2-01_0
+      name: "Project_KC_\uAE30\uD68D\uBAA8\uC74C\uC9D1 (4)_0"
       rect:
         serializedVersion: 2
-        x: 45
-        y: 125
-        width: 410
-        height: 250
+        x: 258
+        y: 270
+        width: 150
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0db6a8fe068304288b45ccd221d2a5
-      internalID: -1543163132
+      spriteID: 6b6801b58097ae5479d6ab9b3bc4cc1b
+      internalID: -1449577434
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BookMark_2-01_0: -1543163132
+      "Project_KC_\uAE30\uD68D\uBAA8\uC74C\uC9D1 (4)_0": -1449577434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
