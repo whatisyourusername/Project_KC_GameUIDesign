@@ -6,6 +6,7 @@ public class TweenAnimation : MonoBehaviour
     [SerializeField] Vector2 targetPos = new Vector2(200, 200);
     [SerializeField] Vector2 targetSize = new Vector2(1200, 2000);
     [SerializeField] bool changeSize = false;
+    [SerializeField] float tweenTime = 0.6f;
 
     private RectTransform movingObject;
     private Vector2 originalPos;
@@ -22,10 +23,10 @@ public class TweenAnimation : MonoBehaviour
     {
         if (movingObject != null)
         {
-            movingObject.DOAnchorPos(targetPos, 0.6f).SetEase(Ease.OutQuad);
+            movingObject.DOAnchorPos(targetPos, tweenTime).SetEase(Ease.OutQuad);
             if (changeSize)
             {
-                movingObject.DOSizeDelta(targetSize, 0.6f).SetEase(Ease.OutQuad);
+                movingObject.DOSizeDelta(targetSize, tweenTime).SetEase(Ease.OutQuad);
             }
         }
         else
@@ -38,8 +39,8 @@ public class TweenAnimation : MonoBehaviour
     {
         if (movingObject != null)
         {
-            movingObject.DOAnchorPos(originalPos, 0.6f).SetEase(Ease.OutQuad);
-            movingObject.DOSizeDelta(originalSize, 0.6f).SetEase(Ease.OutQuad);
+            movingObject.DOAnchorPos(originalPos, tweenTime).SetEase(Ease.OutQuad);
+            movingObject.DOSizeDelta(originalSize, tweenTime).SetEase(Ease.OutQuad);
         }
         else
         {
