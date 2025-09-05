@@ -22,10 +22,10 @@ public class TweenAnimation : MonoBehaviour
     {
         if (movingObject != null)
         {
-            movingObject.DOAnchorPos(targetPos, 1f).SetEase(Ease.OutQuad);
+            movingObject.DOAnchorPos(targetPos, 0.6f).SetEase(Ease.OutQuad);
             if (changeSize)
             {
-                movingObject.DOSizeDelta(targetSize, 1f).SetEase(Ease.OutQuad);
+                movingObject.DOSizeDelta(targetSize, 0.6f).SetEase(Ease.OutQuad);
             }
         }
         else
@@ -38,8 +38,8 @@ public class TweenAnimation : MonoBehaviour
     {
         if (movingObject != null)
         {
-            movingObject.DOAnchorPos(originalPos, 1f).SetEase(Ease.OutQuad);
-            movingObject.DOSizeDelta(originalSize, 1f).SetEase(Ease.OutQuad);
+            movingObject.DOAnchorPos(originalPos, 0.6f).SetEase(Ease.OutQuad);
+            movingObject.DOSizeDelta(originalSize, 0.6f).SetEase(Ease.OutQuad);
         }
         else
         {
