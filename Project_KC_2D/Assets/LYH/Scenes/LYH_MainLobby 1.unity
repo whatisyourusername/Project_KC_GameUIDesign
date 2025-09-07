@@ -4208,8 +4208,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: -250}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &159327069
 GameObject:
@@ -7591,8 +7594,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: -500}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &253613187
 GameObject:
@@ -7922,7 +7928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SFX
+  m_text: "\uD6A8\uACFC\uC74C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -12008,8 +12014,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 1
 --- !u!1 &382318623
 GameObject:
@@ -15845,8 +15854,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1189113978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -13, y: 0}
   m_SizeDelta: {x: 26, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -23058,8 +23067,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 1
 --- !u!1 &721504959
 GameObject:
@@ -24342,8 +24354,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &753611220
 GameObject:
@@ -24575,8 +24590,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 600, y: 5}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &759483909
 GameObject:
@@ -30081,7 +30099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: BGM
+  m_text: "\uBC30\uACBD \uC74C\uC545"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -40314,8 +40332,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 716554737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -13, y: 0}
   m_SizeDelta: {x: 26, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -41290,8 +41308,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1219230672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -13, y: 0}
   m_SizeDelta: {x: 26, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -47616,8 +47634,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: -750}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &1353863557
 GameObject:
@@ -49667,7 +49688,7 @@ RectTransform:
   m_Father: {fileID: 487526517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -52830,7 +52851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MASTER VOLUME
+  m_text: "\uC804\uCCB4 \uBCFC\uB968"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
   m_sharedMaterial: {fileID: -2564337763371800588, guid: 3a6050e03328bad4598160b2d2285549, type: 2}
@@ -53282,7 +53303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1523627459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53735,8 +53756,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 1
 --- !u!1 &1540060938
 GameObject:
@@ -57965,8 +57989,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: -500}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &1680427656
 GameObject:
@@ -59242,8 +59269,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 600, y: -180}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &1708967980
 GameObject:
@@ -62322,8 +62352,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 310, y: -500}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &1785940376
 GameObject:
@@ -63031,7 +63064,7 @@ RectTransform:
   m_Father: {fileID: 393240633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -67050,8 +67083,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: -2340, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 1
 --- !u!1 &1926753757
 GameObject:
@@ -67571,8 +67607,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 1
 --- !u!1 &1935537578
 GameObject:
@@ -70669,8 +70708,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: -310, y: -500}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &2017518026
 GameObject:
@@ -71025,7 +71067,7 @@ RectTransform:
   m_Father: {fileID: 1272117310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -72457,8 +72499,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 600, y: 460}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1200, y: 2000}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 0
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &2065806767
 GameObject:
@@ -75773,8 +75818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: -800}
+  targetPos2: {x: 200, y: 200}
   targetSize: {x: 1536, y: 2688}
+  targetSize2: {x: 1200, y: 2000}
   changeSize: 1
+  changeSize2: 0
   tweenTime: 0.6
 --- !u!1 &2143107399
 GameObject:
