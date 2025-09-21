@@ -4,39 +4,45 @@ using DG.Tweening;
 
 public class ExpandMenu : MonoBehaviour
 {
-    private Button button;
+    [SerializeField] Button button;
     [SerializeField] float tweenTime;
+    [SerializeField] float panelHeight = 0f;
     [SerializeField] GameObject panel;
+    [SerializeField] Image triangle;
 
     private RectTransform rectTransform;
     private float originalHeight;
 
     void Start()
     {
-        button = GetComponent<Button>();
         rectTransform = GetComponent<RectTransform>();
 
         // 원래 높이 기억
         originalHeight = rectTransform.sizeDelta.y;
 
-        button.onClick.AddListener(ToggleExpand);
+        if (button != null) button.onClick.AddListener(ToggleExpand);
     }
 
-    private bool isExpanded = false;
+    public bool isExpanded = false;
 
-    void ToggleExpand()
+    public void ToggleExpand()
     {
-        float panelHeight = ((RectTransform)panel.transform).rect.height;
+        if (panel != null)
+        {
+            panelHeight = ((RectTransform)panel.transform).rect.height;
+        }
 
         if (isExpanded)
         {
             // 원래 높이로 줄이기
             rectTransform.DOSizeDelta(new Vector2(rectTransform.sizeDelta.x, originalHeight), tweenTime);
+            if (triangle != null) triangle.rectTransform.DOScale(new Vector3(1, -1, 1),tweenTime);
         }
         else
         {
             // panel의 현재 높이만큼 확장
-            rectTransform.DOSizeDelta(new Vector2(rectTransform.sizeDelta.x, panelHeight + originalHeight), tweenTime);
+            rectTransform.DOSizeDelta(new Vector2(rectTransform.sizeDelta.x, panelHeight), tweenTime);
+            if (triangle != null) triangle.rectTransform.DOScale(new Vector3(1, 1, 1), tweenTime);
         }
 
         isExpanded = !isExpanded;

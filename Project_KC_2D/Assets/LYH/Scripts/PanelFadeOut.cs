@@ -3,11 +3,12 @@ using UnityEngine.UI;
 
 public class PanelFadeOut : MonoBehaviour
 {
-    public Image whitePanelImage;
-    public float fadeDuration = 1.5f;
+    private Image whitePanelImage;
+    [SerializeField] private float fadeDuration = 1.5f;
 
     void Start()
     {
+        whitePanelImage = GetComponent<Image>();
         StartCoroutine(FadeOut());
     }
 
