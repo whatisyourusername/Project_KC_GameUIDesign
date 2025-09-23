@@ -47,4 +47,13 @@ public class ExpandMenu : MonoBehaviour
 
         isExpanded = !isExpanded;
     }
+
+    public void ToggleShrink()
+    {
+        if (!isExpanded) return;
+
+        rectTransform.DOSizeDelta(new Vector2(rectTransform.sizeDelta.x, originalHeight), tweenTime);
+        if (triangle != null) triangle.rectTransform.DOScale(new Vector3(1, -1, 1), tweenTime);
+        isExpanded = false;
+    }
 }
