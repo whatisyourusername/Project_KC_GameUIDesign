@@ -72,7 +72,8 @@ public class DialogParser : MonoBehaviour
         "달리아",
         "장희빈",
         "육호연",
-        "상점 주인"
+        "상점 주인",
+        "???"
     };
 
     private List<DialogLine> dialogLines = new List<DialogLine>();
