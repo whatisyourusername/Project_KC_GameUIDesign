@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LYH/Scenes/MainLobby_v2.unity
-    guid: ebfe35cc56b3808438a880d69dd078e5
+    path: Assets/Story.unity
+    guid: ab986ebc9d495c54ba68a19d2fd7506f
   m_configObjects: {}

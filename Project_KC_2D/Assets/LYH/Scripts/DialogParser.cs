@@ -48,6 +48,10 @@ public class DialogParser : MonoBehaviour
     [SerializeField] private Image monsterImg;
     [SerializeField] private Image bgImg;
 
+    [SerializeField] private Button nextDialogPanel;
+
+    [SerializeField] private TMP_InputField userNameInput;
+
     [SerializeField] private Transform logContent; // Content 오브젝트
     [SerializeField] private GameObject logLinePrefab; // 로그 프리팹 (안에 TextMeshProUGUI 2개 있음)
     private List<GameObject> logObjects = new List<GameObject>();
@@ -105,10 +109,12 @@ public class DialogParser : MonoBehaviour
         }
         LoadDialog();
 
+        userNameInput.onEndEdit.AddListener(changePlayerName);
+
         for (int i = 0; i < dialogLines.Count; i++)
         {   // 로그 프리팹 생성
             GameObject logLineObj = Instantiate(logLinePrefab, logContent);
-            logLineObj.SetActive(true);
+            logLineObj.SetActive(false);
             logObjects.Add(logLineObj);
         }
 
@@ -214,6 +220,7 @@ public class DialogParser : MonoBehaviour
         // ----------------------------------------------------------------------------------------------------------------
         // 대사 관리
         UIOff();
+        nextDialogPanel.interactable = true;
         switch (charIndex)
         {
             case 0: // 플레이어 대사
@@ -226,24 +233,32 @@ public class DialogParser : MonoBehaviour
             case 1: // 캐릭터 대사
                 Debug.Log("캐릭터 대사 출력");
                 UIOn(true);
+                charImg.DOColor(new Color(1f, 1f, 1f, 1f),0.3f);
                 for (int i = 0; i < charSprites.Length; i++)
                 {
                     if (line.imgName == charSprites[i].name) charImg.sprite = charSprites[i];
                 }
                 nameText.text = line.charName;
-                dialogText.text = line.dialog;
+                dialogText.text = line.dialog.Replace("playerName", playerName);
                 break;
 
             case 2: // 내레이션
                 Debug.Log("내레이션 출력");
                 UIOn(true);
+                charImg.DOColor(new Color(0.3f, 0.3f, 0.3f, 1f), 0.3f);
+                for (int i = 0; i < charSprites.Length; i++)
+                {
+                    if (line.imgName == charSprites[i].name) charImg.sprite = charSprites[i];
+                }
                 nameText.text = "";
                 dialogText.text = line.dialog;
                 break;
 
             case 3: // 대사가 없는 경우
                 Debug.Log("대사 없이 효과만 있는 경우");
+                menu.SetActive(false);
                 // 2초후 다음 대사로 진행
+                nextDialogPanel.interactable = false;
                 DOVirtual.DelayedCall(2f, () => NextLine());
                 break;
 
@@ -309,10 +324,13 @@ public class DialogParser : MonoBehaviour
         charImg.gameObject.SetActive(false);
         monsterImg.gameObject.SetActive(false);
         dialogUI.gameObject.SetActive(false);
+        playerDialogObject.SetActive(false);
     }
 
     private void UIOn(bool isChar)
     {
+        menu.gameObject.SetActive(true);
+
         if (!doTransition) menu.SetActive(true);
         playerDialogObject.SetActive(false);
         dialogUI.gameObject.SetActive(true);
@@ -328,12 +346,21 @@ public class DialogParser : MonoBehaviour
             TextMeshProUGUI[] texts = logObjects[i].GetComponentsInChildren<TextMeshProUGUI>();
             texts[0].text = dialogLines[i].charName == "playerName" ? playerName : dialogLines[i].charName; // 이름
             texts[1].text = dialogLines[i].dialog; // 대사
+            logObjects[i].gameObject.SetActive(true);
         }
         for (int i = currentIndex; i < dialogLines.Count; i++) // 이전 대사로 돌아갔을때 대사를 지울 필요가 있음
         {
             TextMeshProUGUI[] texts = logObjects[i].GetComponentsInChildren<TextMeshProUGUI>();
             texts[0].text = ""; // 이름 비우기
             texts[1].text = ""; // 대사 비우기
+            logObjects[i].gameObject.SetActive(false);
+        }
+        for (int i = 0; i < dialogLines.Count; i++) // 비워져 있는 머시깽이 비활성화 All good~
+        {
+            if(logObjects[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text == "" && 
+                logObjects[i].GetComponentsInChildren<TextMeshProUGUI>()[1].text == "") 
+                logObjects[i].gameObject.SetActive(false);
+            if(logObjects[i].GetComponentsInChildren<TextMeshProUGUI>()[0].text == "이름입력") logObjects[i].gameObject.SetActive(false);
         }
     }
 
@@ -367,15 +394,40 @@ public class DialogParser : MonoBehaviour
         if (currentIndex > 0)
         {
             currentIndex--;
-            if (dialogLines[currentIndex].charName == "playerName") currentIndex--;
-            if (dialogLines[currentIndex].charName == "이름입력") currentIndex--;
-            if (dialogLines[currentIndex].charName == "") currentIndex--;
+            while (dialogLines[currentIndex].charName == "playerName" || dialogLines[currentIndex].charName == "") 
+            { 
+                currentIndex--;
+                if (dialogLines[currentIndex].bgmusic != "")
+                {
+                    if (dialogLines[currentIndex].bgmusic == "stop")
+                    {
+                        Debug.Log("브금 정지");
+                        bgSoundPlayer.Stop();
+                    }
+                    else
+                    {
+                        for (int i = 0; i < bgSounds.Length; i++)
+                        {
+                            // 중복 재생 안 되도록
+                            if (bgSounds[i].name == dialogLines[currentIndex].bgmusic)
+                            {
+                                Debug.Log("브금 재생");
+                                bgSoundPlayer.clip = bgSounds[i];
+                                if (dialogLines[currentIndex].bgmusic != bgSoundPlayer.clip.name || !bgSoundPlayer.isPlaying) bgSoundPlayer.Play();
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (dialogLines[currentIndex].charName == "이름입력") currentIndex -= 2;
 
             if (currentIndex < 0) PreviousLine();
             ShowLine(currentIndex);
         }
         else
         {
+            currentIndex = 0;
             Debug.Log("첫 대사 출력 완료");
         }
     }
@@ -384,7 +436,12 @@ public class DialogParser : MonoBehaviour
     {
         playerName = name;
         Debug.Log(name);
-        changeNameUI.gameObject.SetActive(false);
-        NextLine();
+    }
+    
+    // 테스트용임
+    public void resetDialog()
+    {
+        currentIndex = 0;
+        ShowLine(currentIndex);
     }
 }

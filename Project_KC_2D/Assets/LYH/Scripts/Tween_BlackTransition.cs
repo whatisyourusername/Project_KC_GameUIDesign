@@ -23,7 +23,6 @@ public class Tween_BlackTransition : MonoBehaviour
             DOVirtual.DelayedCall(waitTime, () => image.DOFade(0f, transitionTime).OnComplete(() =>
             {
                 image.gameObject.SetActive(false);
-                menu.SetActive(true);
             }));
         });
     }
