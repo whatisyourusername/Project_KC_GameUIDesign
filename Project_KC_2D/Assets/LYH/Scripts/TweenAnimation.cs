@@ -43,7 +43,7 @@ public class TweenAnimation : MonoBehaviour
         if (movingObject != null)
         {
             movingObject.DOAnchorPos(targetPos2, tweenTime).SetEase(Ease.OutQuad);
-            if (changeSize)
+            if (changeSize2)
             {
                 movingObject.DOSizeDelta(targetSize2, tweenTime).SetEase(Ease.OutQuad);
             }
